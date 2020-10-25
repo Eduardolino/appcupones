@@ -1,0 +1,150 @@
+  /* .bg-cover {
+       background-attachment: static;
+       background-position: center;
+       background-repeat: no-repeat;
+       background-size: cover;
+       height: 100%;
+   }
+   
+   .flex {
+       display: flex;
+       flex-direction: column;
+       flex-wrap: wrap;
+       justify-content: space-between;
+       align-items: center;
+       align-content: space-between;
+   }
+   
+   .letra_blanca {
+       color: white;
+   }
+   
+   .espacio_caja {
+       padding: 2%;
+   }
+   
+   ion-icon {
+       color: white;
+   }
+   
+   .rojo {
+       width: 100%;
+   }
+   
+   .bloque {
+       display: block;
+       text-align: right;
+       text-align: right;
+   }
+   
+   .flex-right {
+       display: flex;
+       flex-direction: column;
+       flex-wrap: wrap;
+       justify-content: flex-start;
+       align-items: stretch;
+       align-content: flex-end;
+   }
+   
+   ion-card {
+       height: 30%
+   }
+   
+   .btn_bueno {
+       --background: #6A2C70;
+   }
+   
+   .icon_caja {
+       color: white;
+       font-size: 1.7em;
+       margin-bottom: 10px;
+   }
+   
+   .informacion {
+       margin-top: 10px;
+       height: 50px;
+       display: flex;
+       flex-direction: column;
+       flex-wrap: nowrap;
+       justify-content: space-around;
+       align-items: baseline;
+       align-content: space-around;
+       h9 {
+           padding-left: 5px;
+           padding-top: -5px;
+           font-style: bold;
+       }
+       p {
+           margin-top: 2px;
+           padding-left: 5px;
+       }
+   }
+   
+   .titulo {
+       font-style: bold;
+       padding-left: 10px;
+       font-size: 18px;
+   }
+   
+   .plomo {
+       color: gray;
+       font-size: 10px;
+       padding: 2px;
+   }
+   
+   .iconon {
+       display: flex;
+       flex-direction: column;
+       flex-wrap: nowrap;
+       justify-content: flex-end;
+       align-items: flex-end;
+       align-content: flex-end;
+       padding-bottom: 15px;
+   }
+   
+   .negro {
+       color: black;
+   }
+   
+   .info {
+       display: flex;
+       flex-direction: column;
+       flex-wrap: nowrap;
+       align-items: baseline;
+   }
+   
+   .i_noti {
+       height: 120px;
+   }
+   
+   .Notipop {
+       height: 30%;
+       width: 25%;
+   }*/
+  
+  .imagen {
+      background-attachment: static;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      display: flex;
+      flex-direction: column;
+      flex-wrap: nowrap;
+      justify-content: center;
+      align-items: center;
+      align-content: center;
+  }
+  
+  ion-row {
+      padding: 0;
+  }
+  
+  ion-col {
+      padding: 0;
+  }
+  
+  ion-title {
+      h2 {
+          color: green;
+      }
+  }

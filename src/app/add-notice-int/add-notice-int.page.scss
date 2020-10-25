@@ -1,0 +1,13 @@
+.añadir {
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: center;
+    align-content: stretch;
+}
+
+.cabecera {
+    --background-color: purple !important !;
+}

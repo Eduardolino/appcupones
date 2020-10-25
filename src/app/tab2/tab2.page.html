@@ -1,0 +1,143 @@
+<ion-header [translucent]="true">
+    <ion-toolbar>
+        <ion-title>
+            <h2>MIS CUPONES</h2>
+        </ion-title>
+    </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+
+
+    <ion-card *ngFor="let item of [1]">
+
+
+        <div class="bg-cover espacio_caja flex" style="background-image: linear-gradient(to bottom, rgba(0,0,0,0.6) 0%,rgba(0,0,0,0.6) 100%),url(../assets/image/jambolis.jpg)">
+            <div class="letra_blanca rojo flex-right">
+                <ion-icon class="icon_caja" name="cloud-download"></ion-icon>
+                <ion-icon class="icon_caja" name="share-social"></ion-icon>
+            </div>
+            <div class="letra_blanca rojo">
+                <div>
+                    <ion-button class="btn_bueno" size="small" shape="rounded" (click)="onClick()">
+                        Ver
+                    </ion-button>
+                </div>
+                <div>
+
+                    Noticia de ultima hora
+
+                </div>
+                <h9 style="font-size: 10px;"><b>publicado por:</b> Eduardo Lino 12/08/2020 18:00 pm</h9>
+
+            </div>
+
+        </div>
+
+
+    </ion-card>
+    <ion-row>
+        <ion-col size="9">
+            <h4 class="titulo">Noticias Pasadas </h4>
+        </ion-col>
+        <ion-col size="3">
+            <h5 style="font-size: 10px; color:gray;">Ver todas >></h5>
+        </ion-col>
+    </ion-row>
+    <ion-slides [options]="{slidesPerView:'auto',zoom:false,grabCursor:true}">
+        <ion-slide *ngFor="let item of [1,1,1,1]" style="width: 80%; height: 20%;background-color:whitesmoke; border-radius: 10px; margin: 10px;">
+
+            <ion-row class="Notipas">
+                <ion-col size="4">
+                    <img class="i_noti" src="../assets/image/jam2023.jpg" alt="" style="padding: 5px,5px,0,5px; border-radius:10px;">
+                </ion-col>
+                <ion-col class="info" size="7">
+                    <h5 class="plomo">23 de julio</h5>
+                    <h4 style="font-size: 15px; margin: 0;"> asociacion de Scouts de bolivia viaja hoy</h4>
+                    <h5 class="plomo">Noticia</h5>
+                </ion-col>
+                <i-col class="iconon" size="1">
+                    <ion-icon class="negro" name="share-social"></ion-icon>
+                </i-col>
+            </ion-row>
+
+        </ion-slide>
+        <ion-slide>
+            <h1>Awesome Slide </h1>
+        </ion-slide>
+    </ion-slides>
+    <ion-row>
+        <ion-col size="9">
+            <h4 class="titulo">Noticias Populares </h4>
+        </ion-col>
+        <ion-col size="3">
+            <h5 style="font-size: 10px; color:gray;">Ver todas >></h5>
+        </ion-col>
+    </ion-row>
+    <ion-slides [options]="{slidesPerView:'auto',zoom:false,grabCursor:true}">
+        <ion-slide *ngFor="let item of [1,1,1,1]" style="width: 45%; height: 35%;background-color:whitesmoke; border-radius: 10px; margin: 10px;">
+            <ion-card *ngFor="let item of [1]">
+
+
+                <div class="bg-cover espacio_caja flex" style="background-image: linear-gradient(to bottom, rgba(0,0,0,0.6) 0%,rgba(0,0,0,0.6) 100%),url(../assets/image/jambolis.jpg)">
+                    <div class="letra_blanca rojo flex-right">
+                        <ion-icon class="icon_caja" name="cloud-download"></ion-icon>
+                        <ion-icon class="icon_caja" name="share-social"></ion-icon>
+                    </div>
+                    <div class="letra_blanca rojo">
+                        <div>
+                            <ion-button class="btn_bueno" size="small" shape="rounded" (click)="onClick()">
+                                Ver
+                            </ion-button>
+                        </div>
+                        <div>
+
+                            Noticia de ultima hora</div>
+                    </div>
+                    <h9 style="font-size: 10px;"><b>publicado por:</b> Eduardo Lino 12/08/2020 18:00 pm</h9>
+                </div>
+
+
+            </ion-card>
+        </ion-slide>
+    </ion-slides>
+    <!-- <ion-card>
+        <ion-row>
+            <ion-col size="5">
+                <img class="imagen" src="https://placeimg.com/640/640/nature" alt="">
+            </ion-col>
+            <ion-col size="7" style="padding-left:5px; ">
+                <h3>Bosques de Suiza</h3>
+                <p>Autor: Jose Perez</p>
+                <p>Año:2020
+                </p>
+            </ion-col>
+        </ion-row>
+    </ion-card>
+    <ion-card>
+        <ion-row>
+            <ion-col>
+                <img class="imagen" src="https://placeimg.com/640/640/nature1" alt="">
+            </ion-col>
+            <ion-col size="7" style="padding-left:5px; ">
+                <h3>Tardes en Amsterdam</h3>
+                <p>Autor: Jose Perez</p>
+                <p>Año:2020
+                </p>
+            </ion-col>
+        </ion-row>
+    </ion-card>
+    <ion-card>
+        <ion-row>
+            <ion-col size="5">
+                <img class="imagen" src="https://placeimg.com/640/640/nature2" alt="">
+            </ion-col>
+            <ion-col size="7" style="padding-left:5px; ">
+                <h3>Calles de Belgica</h3>
+                <p>Autor: Jose Perez</p>
+                <p>Año:2020
+                </p>
+            </ion-col>
+        </ion-row>
+    </ion-card>-->
+</ion-content>

@@ -1,0 +1,17 @@
+ion-toolbar{
+    --background: #DA4453;  /* fallback for old browsers */
+    --background: -webkit-linear-gradient(to right, #89216B, #DA4453);  /* Chrome 10-25, Safari 5.1-6 */
+    --background: linear-gradient(to right, #89216B, #DA4453); 
+    --font-size: 18px;
+    --color:white;
+    ion-title{
+        font-family: Staatliches;
+    }
+}   
+ion-searchbar {
+    margin-top:3px;
+    --box-shadow: none;
+    --border-radius: 12px;
+    --background: #ebebeb;
+    --icon-color:#DA4453;
+  }

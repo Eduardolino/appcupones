@@ -1,0 +1,205 @@
+<ion-header class="ion-no-border">
+    <ion-toolbar class="cabecera">
+
+        <ion-item lines="none">
+            <ion-avatar slot="end">
+                <img src="../assets/image/up.jpg" />
+            </ion-avatar>
+            <ion-label>
+                <h1>Bienvenido a Noticias</h1>
+                <p style="color:white;">Eduardo Lino</p>
+            </ion-label>
+        </ion-item>
+
+
+    </ion-toolbar>
+
+</ion-header>
+<ion-toolbar>
+    <ion-segment (ionChange)="segmentChanged()" [(ngModel)]="segment">
+        <ion-segment-button value="0">
+            <ion-label>Internacional</ion-label>
+        </ion-segment-button>
+        <ion-segment-button value="1">
+            <ion-label>Nacional</ion-label>
+        </ion-segment-button>
+    </ion-segment>
+</ion-toolbar>
+<ion-content [fullscreen]="true">
+
+
+    <ion-slides #slides (ionSlideDidChange)="slideChanged()" scrollbar="true">
+        <ion-slide class="nacional">
+            <div class="ion-no-padding wrapper" style="width: 100%">
+                <ion-searchbar placeholder="title of notice"></ion-searchbar>
+                <ion-grid class="ion-no-padding">
+                    <ion-row class="ion-align-items-baseline">
+                        <ion-col size="6">
+                            <h4 class="title">Recientes</h4>
+                        </ion-col>
+                        <ion-col size="6">
+                            <h4 class="more ion-text-end">ver mas..</h4>
+                        </ion-col>
+                    </ion-row>
+                    <ion-row class="ion-no-padding">
+                        <ion-col size="4">
+                        </ion-col>
+                        <ion-col size="4">
+                            <h2 class="more ion-text-center" style="font-size: 25px; font-style:bold;padding: 0; margin: 0;" (click)="addnoteInt()">
+                                + Añadir</h2>
+                        </ion-col>
+                        <i-col size="4"></i-col>
+                    </ion-row>
+                </ion-grid>
+            </div>
+            <ion-card class="noti-nac" *ngFor="let item of noticias | async">
+
+                <img style="width: 100% " src={{item.imagen_n}} />
+                <ion-card-header class="derecha ">
+                    <ion-card-subtitle>lugar </ion-card-subtitle>
+                    <ion-card-title>{{item.lugar}}</ion-card-title>
+                </ion-card-header>
+                <ion-card-content>
+
+                    <ion-button fill="outline" href="{{item.url_n}}">View </ion-button>
+
+
+                </ion-card-content>
+
+            </ion-card>
+
+
+        </ion-slide>
+
+        <!--nacional-->
+        <ion-slide class=" contenido ">
+            <div class="ion-padding wrapper ">
+                <ion-searchbar placeholder="title of notice "></ion-searchbar>
+                <ion-row class="ion-no-padding">
+                    <ion-col size="4">
+                    </ion-col>
+                    <ion-col size="4">
+                        <h2 class="more ion-text-center" style="font-size: 25px; font-style:bold;padding: 0; margin: 0;" (click)="addnoteNac()">
+                            + Añadir</h2>
+                    </ion-col>
+                    <i-col size="4"></i-col>
+                </ion-row>
+            </div>
+
+            <ion-grid>
+                <ion-row>
+                    <ion-col size="12" *ngFor="let ite of publicaciones | async">
+                        <div class="bg-cover espacio_caja flex " [ngStyle]="{'background-image':'linear-gradient(to bottom, rgba(0,0,0,0.6) 0%,rgba(0,0,0,0.6) 100%),url(' + ite.imagen_p + ')'}">
+                            <div class="letra_blanca rojo flex-right ">
+                                <ion-icon class="icon_caja " name="cloud-download "></ion-icon>
+                                <ion-icon class="icon_caja " name="share-social "></ion-icon>
+                            </div>
+                            <div class="letra_blanca rojo flex ">
+                                <div>
+                                    <ion-button class="btn_bueno " size="medium " shape="rounded " (click)="irnoticia(ite.key)">
+                                        Ver
+                                    </ion-button>
+                                </div>
+                                <div>
+
+                                    <h4 class="ion-text-start ">{{ite.titulo_p}}</h4>
+
+                                </div>
+                                <h9 style="font-size: 10px; "><b>publicado por:</b> Eduardo 12/{{ite.fecha_p}}</h9>
+
+                            </div>
+
+                        </div>
+                    </ion-col>
+
+                </ion-row>
+                <ion-row class="ion-align-items-baseline ">
+                    <ion-col size="6 ">
+                        <h4 class="title ">Recientes</h4>
+                    </ion-col>
+                    <ion-col size="6 ">
+                        <h4 class="more ion-text-end ">ver mas..</h4>
+                    </ion-col>
+                </ion-row>
+            </ion-grid>
+            <ion-grid>
+                <ion-row>
+                    <ion-col size="12 ">
+                        <ion-slides [options]="uno ">
+                            <ion-slide *ngFor="let item of [1,1] ">
+                                <ion-card>
+                                    <ion-row class="Notipas ">
+                                        <ion-col size="4 ">
+                                            <img class="i_noti " src="../assets/image/jam2023.jpg " alt=" " style="padding: 5px,5px,0,5px; border-radius:10px; ">
+                                        </ion-col>
+                                        <ion-col class="info " size="7 ">
+                                            <h5 class="plomo ">23 de julio</h5>
+                                            <h4 style="font-size: 15px; margin: 0; "> asociacion de Scouts de bolivia viaja hoy</h4>
+                                            <h5 class="plomo ">Noticia</h5>
+                                        </ion-col>
+                                        <i-col class="iconon " size="1 ">
+                                            <ion-icon class="negro " name="share-social "></ion-icon>
+                                        </i-col>
+                                    </ion-row>
+                                </ion-card>
+                            </ion-slide>
+                        </ion-slides>
+                    </ion-col>
+                </ion-row>
+            </ion-grid>
+
+            <div class="ion-no-padding wrapper ">
+                <ion-grid class="ion-no-padding ">
+                    <ion-row class="ion-align-items-baseline ">
+                        <ion-col size="6 ">
+                            <h4 class="title ">Pasados</h4>
+                        </ion-col>
+                        <ion-col size="6 ">
+                            <h4 class="more ion-text-end ">ver mas..</h4>
+                        </ion-col>
+                    </ion-row>
+                </ion-grid>
+            </div>
+
+            <ion-grid>
+                <ion-row>
+                    <ion-col size="12 ">
+                        <ion-slides [options]="{slidesPerView: 'auto',zoom:false,grabCursor:true} ">
+                            <ion-slide *ngFor="let ite of publicaciones | async " style="width: 45%; height: 35%;background-color:whitesmoke; border-radius: 10px; margin: 10px; ">
+                                <ion-card style="border-radius: 15px; ">
+
+
+                                    <div class="bg-cover1 espacio_caja flex " [ngStyle]="{'background-image':'linear-gradient(to bottom, rgba(0,0,0,0.6) 0%,rgba(0,0,0,0.6) 100%),url(' + ite.imagen_p + ')'}">
+                                        <div class="letra_blanca rojo flex-right ">
+                                            <ion-icon class="icon_caja " name="cloud-download "></ion-icon>
+                                            <ion-icon class="icon_caja " name="share-social "></ion-icon>
+                                        </div>
+                                        <div class="letra_blanca rojo ">
+                                            <div>
+                                                <ion-button class="btn_bueno " size="small " shape="rounded " (click)="irnoticia( ite.key) ">
+                                                    Ver
+                                                </ion-button>
+                                            </div>
+
+
+                                            {{ite.titulo_p}}</div>
+                                        <h9 style="font-size: 10px; color:white"><b>publicado por:</b> {{ite.autor}} {{ite.fecha_p}}</h9>
+
+
+                                    </div>
+
+
+                                </ion-card>
+                            </ion-slide>
+                        </ion-slides>
+                    </ion-col>
+                </ion-row>
+            </ion-grid>
+
+
+
+
+        </ion-slide>
+
+    </ion-slides>
+</ion-content>

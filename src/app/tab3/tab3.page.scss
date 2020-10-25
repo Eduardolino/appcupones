@@ -1,0 +1,76 @@
+.cambiacolor {
+    --background: black;
+}
+
+.prod {
+    position: relative;
+    border-bottom: -10;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    padding: 0;
+}
+
+.llevame {
+    position: absolute;
+    color: purple;
+    margin-left: -65%;
+    margin-top: 25%;
+}
+
+ion-row {
+    background: #f4f4f4;
+    height: 150px;
+    padding: 0;
+    border-radius: 20px;
+    margin: 5px;
+}
+
+.descuento {
+    margin-top: -15%;
+    margin-left: 25%;
+}
+
+.des {
+    font-size: 40px;
+    font-style: bold;
+    //margin-left: 10%;
+}
+
+ion-title {
+    background: #6A2C70;
+}
+
+ion-col {
+    padding: 0;
+}
+
+.bg-cover {
+    background-attachment: static;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+.llevame_btn {
+    color: white;
+    --border-color: white;
+    //--background: #6A2C70;
+}
+
+.caja_descuento {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    align-content: stretch;
+}

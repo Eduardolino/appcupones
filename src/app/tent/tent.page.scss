@@ -1,0 +1,53 @@
+.cabecera {
+    --background: #6A2C70;
+    color: white;
+}
+
+.mayusculas {
+    --font-family: 'Roboto', sans-serif;
+    --font-weight: 800;
+    --font-size: 26px;
+}
+
+.minusculas {
+    font-family: 'Lato', sans-serif;
+    font-weight: 800;
+    font-size: 16px;
+}
+
+.infocupon {
+    margin: 0;
+    padding: 0;
+    height: 180px;
+    background: linear-gradient(rgba(126, 213, 111, 0.8), rgba(40, 180, 131, 0.8));
+    clip-path: polygon(20% 100, 10% 0, 10% 200px, 10% 0);
+}
+
+.cupon {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    align-content: stretch;
+}
+
+.desc {
+    padding: 0;
+    border-radius: 10%;
+}
+
+.cover {
+    background: red;
+    background-attachment: static;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    vertical-align: 100% !important;
+}

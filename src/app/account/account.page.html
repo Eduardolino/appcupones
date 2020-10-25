@@ -1,0 +1,110 @@
+<ion-header>
+    <ion-toolbar class="cabecera">
+        <ion-title class="ion-text-center">INFOSCOUT</ion-title>
+    </ion-toolbar>
+</ion-header>
+
+<ion-content>
+    <ion-card style="background-color: whitesmoke">
+        <ion-card-header style="position:static">
+
+            <ion-card-title class="ion-text-center mayusculas">REGISTRO</ion-card-title>
+            <img src="../assets/image/logo.png" class="logo" style=" width:70px;height: 70px;padding-top: 10px;position: relative;" />
+        </ion-card-header>
+
+        <ion-card-content>
+            <ion-grid fixed>
+                <ion-row>
+                    <ion-col size="12">
+                        <ion-item>
+                            <ion-label position="stacked" class="minusculas">Nombre completo</ion-label>
+                            <ion-input></ion-input>
+                        </ion-item>
+                    </ion-col>
+                </ion-row>
+                <ion-row>
+                    <ion-col size="7">
+                        <ion-item>
+                            <ion-label position="stacked" class="minusculas">Rama</ion-label>
+                            <ion-select class="minusculas" placeholder="Selecciona">
+                                <ion-select-option value="brown">Exploradores</ion-select-option>
+                                <ion-select-option value="blonde">Pioneros</ion-select-option>
+                                <ion-select-option value="black">Rovers</ion-select-option>
+                                <ion-select-option value="red">Dirigentes</ion-select-option>
+                            </ion-select>
+                        </ion-item>
+                    </ion-col>
+                    <ion-col size="5">
+                        <ion-item>
+                            <ion-label class="minusculas" position="stacked">Genero</ion-label>
+                            <ion-select placeholder="Selecciona">
+                                <ion-select-option value="brown">Masculino</ion-select-option>
+                                <ion-select-option value="blonde">Femenino</ion-select-option>
+
+                            </ion-select>
+                        </ion-item>
+                    </ion-col>
+                </ion-row>
+                <ion-row>
+                    <ion-col size="7">
+                        <ion-item>
+                            <ion-label class="minusculas" position="stacked">Distrito</ion-label>
+                            <ion-select placeholder="Selecciona">
+                                <ion-select-option value="Tarija">Tarija</ion-select-option>
+                                <ion-select-option value="Cochabamba">Cochabamba</ion-select-option>
+                                <ion-select-option value="La paz">La paz</ion-select-option>
+                                <ion-select-option value="Santa cruz">Santa cruz</ion-select-option>
+                                <ion-select-option value="Chuquisaca">Chuquisaca</ion-select-option>
+                                <ion-select-option value="Oruro">Oruro</ion-select-option>
+                                <ion-select-option value="Potosi">Potosi</ion-select-option>
+                                <ion-select-option value="Beni">Beni</ion-select-option>
+                            </ion-select>
+                        </ion-item>
+                    </ion-col>
+                </ion-row>
+                <ion-row>
+                    <ion-col size="12">
+                        <ion-item>
+                            <ion-label class="minusculas" position="stacked">Grupo Scout</ion-label>
+                            <ion-select placeholder="Seleccione su grupo">
+                                <ion-select-option value="Tarija">Tarija</ion-select-option>
+                                <ion-select-option value="m">Cochabamba</ion-select-option>
+                                <ion-select-option value="f">La paz</ion-select-option>
+                                <ion-select-option value="m">Santa cruz</ion-select-option>
+                                <ion-select-option value="f">Chuquisaca</ion-select-option>
+                                <ion-select-option value="m">Oruro</ion-select-option>
+                                <ion-select-option value="f">Potosi</ion-select-option>
+                                <ion-select-option value="m">Beni</ion-select-option>
+                            </ion-select>
+                        </ion-item>
+                    </ion-col>
+                </ion-row>
+                <ion-row>
+                    <ion-col size="12">
+                        <ion-item>
+                            <ion-label class="minusculas" position="stacked">E-mail</ion-label>
+                            <ion-input type="email"></ion-input>
+                        </ion-item>
+
+                    </ion-col>
+                </ion-row>
+                <ion-row>
+                    <ion-col size="12">
+                        <ion-item>
+                            <ion-label class="minusculas" position="stacked">Telefono</ion-label>
+                            <ion-input type="tel"></ion-input>
+                        </ion-item>
+
+                    </ion-col>
+                </ion-row>
+            </ion-grid>
+            <div class="añadir">
+                <ion-item lines="none" style="--background: none">
+                    <ion-button class="btn_bueno" slot="start" size="big">Registrar</ion-button>
+                    <ion-button color="danger" fill="outline" slot="end" size="big">Cancelar</ion-button>
+                </ion-item>
+
+            </div>
+        </ion-card-content>
+    </ion-card>
+</ion-content>

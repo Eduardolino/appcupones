@@ -1,0 +1,61 @@
+                            .cabecera {
+                                --background: #6A2C70;
+                                color: white;
+                            }
+                            
+                            .superior {
+                                display: flex;
+                                flex-direction: column;
+                                flex-wrap: nowrap;
+                                justify-content: space-around;
+                                align-items: stretch;
+                                align-content: stretch;
+                            }
+                            
+                            .img {
+                                padding-left: auto;
+                                padding-right: auto;
+                            }
+                            
+                            .bg-cover {
+                                background-attachment: static;
+                                background-position: center;
+                                background-repeat: no-repeat;
+                                background-size: cover;
+                                display: flex;
+                                flex-direction: column;
+                                flex-wrap: nowrap;
+                                justify-content: center;
+                                align-items: center;
+                                align-content: center;
+                                border-top-left-radius: 20px;
+                                border-bottom-left-radius: 20px;
+                            }
+                            
+                            .item {
+                                --background: none;
+                                padding: 5px;
+                            }
+                            
+                            .btn_bueno {
+                                --background: #6A2C70;
+                            }
+                            
+                            .añadir {
+                                padding: 10px;
+                                display: flex;
+                                flex-direction: column;
+                                flex-wrap: nowrap;
+                                justify-content: space-around;
+                                align-items: center;
+                                align-content: stretch;
+                            }
+                            
+                            .white {
+                                color: white;
+                            }
+                            
+                            .logo {
+                                margin: 10px auto;
+                                display: block;
+                            }

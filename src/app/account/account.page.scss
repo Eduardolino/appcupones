@@ -1,0 +1,45 @@
+                @import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;900&family=Roboto:wght@400;500&display=swap');
+                .logo {
+                    margin: 10px auto;
+                    display: block;
+                }
+                
+                .cabecera {
+                    --background: #6A2C70;
+                    color: white;
+                }
+                
+                ion-card-header {
+                    --background: white;
+                    border-radius: 15px;
+                }
+                
+                .item {
+                    //--background: none;
+                    border-radius: 50px;
+                    padding: 3px;
+                }
+                
+                .mayusculas {
+                    font-family: 'Roboto', sans-serif;
+                    font-weight: 800;
+                    font-size: 26px;
+                }
+                
+                .minusculas {
+                    font-family: 'Lato', sans-serif;
+                    font-weight: 800;
+                    font-size: 16px;
+                }
+                
+                .button {
+                    border-radius: 10%;
+                }
+                
+                ion-content {
+                    --border-radius: 10%;
+                }
+                
+                .btn_bueno {
+                    --background: #6A2C70;
+                }

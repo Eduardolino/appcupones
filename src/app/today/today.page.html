@@ -1,0 +1,22 @@
+<div class="message-today ">
+  <ion-icon slot="start" name="flame" class="message-today-icon"></ion-icon>
+  <ion-label>Los mejores cupones de hoy...!!!</ion-label>
+</div>
+<ion-content>
+  <div class="ion-padding">
+      <div  class="cards-cupon" *ngFor="let item of [1,1,1,1,1]">
+            <div class="container">
+              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQoYi9GA3PdWCJ4XKy1V8mTfpJ5uERwLLjC9g&usqp=CAU" alt="Imagen_Tomatodo" />
+              <div class="cupon-icono centrar" (click)="obtenerCupon()"><ion-icon  name="film"></ion-icon></div>
+              <p class="title">OBTENER CUPON</p>
+              <div class="overlay"></div>
+            </div>
+            <div class="info-cupon">
+              <p >TOMA TODO</p>
+              <span >TOMATODO BARATOS DESCUENTO 20$</span>
+              <p class="info-cupo-data">Tomatodo de Silicona libre de BPA y PVC. Fácil de lavar, apto para lavavajillas. Eco friendly</p>
+            </div>
+      </div>  
+  </div>
+  <p class="message">SON TODOS NUESTROS CUPONES</p>
+</ion-content>

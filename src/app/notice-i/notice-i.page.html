@@ -1,0 +1,33 @@
+<ion-header>
+    <ion-toolbar>
+        <ion-title>Noticia Internacional</ion-title>
+        <ion-buttons slot="start">
+            <ion-back-button>volver</ion-back-button>
+        </ion-buttons>
+    </ion-toolbar>
+</ion-header>
+
+<ion-content>
+    <ion-card>
+        <ion-slides mode="ios" pager="ios" scrollbar="ios">
+            <ion-slide>
+                <img src="{{publicaciones.imagen_p}}" alt="imagen de noticia">
+            </ion-slide>
+            <ion-slide>
+                <video src="https://www.youtube.com/watch?v=xTbG8AQ1pz8&list=RDxTbG8AQ1pz8&start_radio=1">view</video>
+            </ion-slide>
+        </ion-slides>
+
+        <ion-card-header>
+            <ion-card-subtitle>Lugar</ion-card-subtitle>
+            <ion-card-title>{{publicaciones.lugar}}</ion-card-title>
+
+        </ion-card-header>
+        <ion-card-content>
+            {{publicaciones.desarrollo_p}}
+        </ion-card-content>
+    </ion-card>
+</ion-content>
+/*En las pasada hora partio uno de los contigentes mas grandes en la historia de la ASB con mas de 500 participantes entre Beneficiarios, Dirigentes y EIS (Equipo Internacional de servicio), En las proximos dias estara comenzando este magno evento que
+reune a scouts de todo el mundo en un solo lugar .Este evento sera unos de los mas grandes de la historia ya que reunira a cerca de 50.000 scouts de todo el mundo quienes podran disfrutar del maravilloso lugar El Reserve Betchel Reserve en Virginia del
+Oeste en los Estados Unidos. Muchas suerte a todos y buena caza¡¡¡*/

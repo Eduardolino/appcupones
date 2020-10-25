@@ -1,0 +1,13 @@
+.cabecera {
+    --background: #6A2C70;
+}
+
+.añadir {
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: center;
+    align-content: stretch;
+}
